@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla JS Title</title>
+</head>
+<body>
+    <h1 id="title">Vanilla JS Title</h1>
+  <button id="changeTitle">Change Title </button>
+  <p id="updatesCount">Updates=0</p>
+</body>
+</html>
+<script>
+    let Updates = 0;
+    document.getElementById("changeTitle").addEventListener("click", () => {
+      document.getElementById("title").innerText = "Updated Vanilla JS Title";
+      Updates++;
+      document.getElementById("updatesCount").innerText =`Updates=${Updates}`
+    });
+  </script>
